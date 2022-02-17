@@ -4,12 +4,12 @@
   background-color: var(--footer-backgroud-color);
 }
 
-.address {
+.adress {
   font-style: normal;
 }
 
 /* Логотип в футере*/
-.footer-logo {
+.footer-logo__link {
   display: inline-block;
 
   color: var(--primary-white-color);
@@ -20,16 +20,16 @@
   line-height: 1.19;
 }
 
-.footer-logo > span {
+.footer-logo__span {
   color: var(--accent-color);
 }
 
 /* Контактные данные в футере */
-.address-nav {
+.address__nav {
   margin-top: 20px;
 }
 
-.link.first {
+.address__nav__first {
   color: var(--primary-white-color);
   &:hover,
   &:focus {
@@ -37,7 +37,7 @@
   }
 }
 
-.link.second {
+.address__nav__second {
   color: var(--footer-contacts-color);
   &:hover,
   &:focus {
@@ -45,14 +45,14 @@
   }
 }
 
-.address-nav .item + .item {
+.address__nav__item + .address__nav__item {
   margin-top: 9px;
   margin-bottom: 0;
 }
 
 /* Присоединяйтесь в соц сетях */
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -63,7 +63,7 @@
   height: 80px; */
 }
 
-.join-us-title {
+.join-us__title {
   display: inline-block;
   margin: 0;
   font-weight: 700;
@@ -74,17 +74,17 @@
   color: var(--primary-white-color);
 }
 
-.join-us .footer-contacts {
+.join-us__contacts {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.footer-item + .footer-item {
+.join-us__item + .join-us__item {
   margin-left: 10px;
 }
 
-.footer-contacts .social-link {
+.join-us__social-link {
   display: flex;
   height: 44px;
   width: 44px;
@@ -97,11 +97,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 /* ================подпишитесь на рассылку================ */
@@ -109,7 +109,7 @@
   margin-left: auto;
 }
 
-.sign-up-title {
+.sign-up__title {
   display: inline-block;
   margin: 0;
   font-weight: 700;
@@ -120,16 +120,16 @@
   color: var(--primary-white-color);
 }
 
-.footer-form.js-speaker-form {
+.sign-up__form {
   display: flex;
   margin-top: 20px;
 }
 
-.email-field {
+.sign-up__form__field {
   margin-right: 15px;
 }
 
-.email-field input {
+.sign-up__form__field__email {
   height: 50px;
   width: 358px;
   padding: 15px 0 15px 16px;
@@ -138,24 +138,24 @@
   background-color: var(--footer-backgroud-color);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.email-field input::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.icon-submit {
+.sign-up__form__button__icon-submit {
   margin-left: 10px;
 }
 
-.sign-up-button {
+.sign-up__form__button {
   display: flex;
   width: 200px;
   height: 50px;

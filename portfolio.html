@@ -203,48 +203,51 @@
 
     <!-- Подвал страницы -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer__container container">
             <!-- Логотип -->
-            <div class="footer-adress">
-                <a lang="en" href="" class="footer-logo link"><span>Web</span>Studio</a>
+            <div class="footer__container__logo footer-logo">
+                <a lang="en" href="" class="footer-logo__link link"><span class="footer-logo__span">Web</span>Studio</a>
     
                 <!-- Адрес компании -->
-                <address class="address">
-                    <ul class="address-nav list">
-                        <li class="item"><a href="" class="link first">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="item"><a href="mailto:info@devstudio.com" class="link second">info@devstudio.com</a></li>
-                        <li class="item"><a href="tel:+380961111111" class="link second">+38 096 111 11 11</a></li>
+                <address class="footer-logo__address adress">
+                    <ul class="address__nav list">
+                        <li class="address__nav__item"><a href="" class="address__nav__first link">г. Киев, пр-т Леси
+                                Украинки, 26</a></li>
+                        <li class="address__nav__item"><a href="mailto:info@devstudio.com"
+                                class="address__nav__second link">info@devstudio.com</a></li>
+                        <li class="address__nav__item"><a href="tel:+380961111111" class="address__nav__second link">+38 096
+                                111 11 11</a></li>
                     </ul>
                 </address>
             </div>
-            <!-- Контакты соц сетей -->
-            <div class="join-us">
-                <p class="join-us-title title">Присоединяйтесь</p>
-                <ul class="footer-contacts list">
-                    <li class="team-item footer-item">
-                        <a href="Instagram" class="social-link link">
-                            <svg class="team-icon" width="20" height="20">
+            <!-- Контакты соц. сетей -->
+            <div class="footer__container__join-us join-us">
+                <p class="join-us__title title">Присоединяйтесь</p>
+                <ul class="join-us__contacts list">
+                    <li class="join-us__item team-item">
+                        <a href="Instagram" class="join-us__social-link link">
+                            <svg class="join-us__social-icon team-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="team-item footer-item">
-                        <a href="Twitter" class="social-link link">
-                            <svg class="team-icon" width="20" height="20">
+                    <li class="join-us__item team-item">
+                        <a href="Twitter" class="join-us__social-link link">
+                            <svg class="join-us__social-icon team-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="team-item footer-item">
-                        <a href="Facebook" class="social-link link">
-                            <svg class="team-icon" width="20" height="20">
+                    <li class="join-us__item team-item">
+                        <a href="Facebook" class="join-us__social-link link">
+                            <svg class="join-us__social-icon team-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="team-item footer-item">
-                        <a href="LinkedIn" class="social-link link">
-                            <svg class="team-icon" width="20" height="20">
+                    <li class="join-us__item team-item">
+                        <a href="LinkedIn" class="join-us__social-link link">
+                            <svg class="join-us__social-icon team-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -252,16 +255,16 @@
                 </ul>
             </div>
             <!-- ===============Форма подписки на рассылку=============== -->
-            <div class="sign-up">
-                <p class="sign-up-title title">Подпишитесь на рассылку</p>
-                <form class="footer-form js-speaker-form">
-                    <div class="email-field">
+            <div class="footer__container__sign-up sign-up">
+                <p class="sign-up__title title">Подпишитесь на рассылку</p>
+                <form class="sign-up__form js-speaker-form">
+                    <div class="sign-up__form__field">
                         <label>
-                            <input type="email" name="email" placeholder="E-mail">
+                            <input class="sign-up__form__field__email" type="email" name="email" placeholder="E-mail">
                         </label>
                     </div>
-                    <button class="sign-up-button button" type="submit">Подписаться
-                        <svg class="icon icon-submit" width="24" height="24">
+                    <button class="sign-up__form__button button" type="submit">Подписаться
+                        <svg class="sign-up__form__button__icon-submit icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-submit"></use>
                         </svg>
                     </button>
