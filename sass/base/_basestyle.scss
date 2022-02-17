@@ -1,6 +1,6 @@
 body {
-  color: getColor('text-primary');
-  background-color: getColor('primary-white');
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
 
   font-family: Roboto, sans-serif;
   font-size: 14px;

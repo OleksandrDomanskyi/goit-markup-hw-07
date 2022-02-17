@@ -7,23 +7,7 @@
   display: flex;
 }
 
-.button.primary {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 32px;
-
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  font-weight: 700;
-  line-height: 1.87;
-
-  align-items: center;
-  letter-spacing: 0.06em;
-}
-
-.button.secondary {
+.portfolio__buttons__secondary {
   display: inline-block;
   padding-top: 6px;
   padding-right: 22px;
