@@ -1,6 +1,3 @@
-@import './utils/variables';
-@import './utils/hidden';
-
 @import './base/basestyle';
 @import './base/common';
 
@@ -17,3 +14,7 @@
 @import './layouts/section-clients';
 @import './layouts/section-portfolio';
 @import './layouts/page-footer';
+
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/current-link';

@@ -31,17 +31,18 @@
 
 .link.first {
   color: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .link.second {
   color: var(--footer-contacts-color);
-}
-
-.link.first:hover,
-.link.first:focus,
-.link.second:hover,
-.link.second:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .address-nav .item + .item {
@@ -150,6 +151,10 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+.icon-submit {
+  margin-left: 10px;
+}
+
 .sign-up-button {
   display: flex;
   width: 200px;
@@ -160,23 +165,16 @@
   padding: 0;
 
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 1px solid transparent;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.icon-submit {
-  margin-left: 10px;
-}
-
-.sign-up-button:hover,
-.sign-up-button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
