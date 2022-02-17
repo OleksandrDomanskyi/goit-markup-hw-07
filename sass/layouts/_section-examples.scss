@@ -1,33 +1,26 @@
-.examples-title {
+.examples__title {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
 }
 
-.examples-list {
+.examples__list {
   margin-top: 50px;
   display: flex;
   margin-bottom: 0;
 }
 
-.examples-list .item {
+.examples__item {
   margin-right: 30px;
-}
-
-.examples-list .item:last-child {
-  margin-right: 0;
-}
-
-.examples-list img {
-  display: block;
-}
-
-.examples-list .item {
   position: relative;
   display: flex;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.examples-list-container {
+.examples__list-container {
   left: 0;
   bottom: 0;
   position: absolute;
@@ -39,7 +32,7 @@
   align-items: center;
 }
 
-.examples-list-container p {
+.examples__text {
   text-align: center;
   margin: 0;
   font-weight: 700;

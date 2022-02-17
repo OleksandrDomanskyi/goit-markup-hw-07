@@ -432,18 +432,22 @@ img {
   letter-spacing: 0.06em;
 }
 
-.features-list {
+.features__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.features-list .item {
+.features__list__item {
   width: 270px;
   height: 251px;
   margin-right: 30px;
 }
 
-.features-icon {
+.features__list__item:last-child {
+  margin-right: 0;
+}
+
+.features__list__icon {
   display: flex;
   height: 120px;
   background-color: var(--secondary-background-color);
@@ -452,11 +456,7 @@ img {
   justify-content: center;
 }
 
-.features-list .item:last-child {
-  margin-right: 0;
-}
-
-.features-list .title {
+.features__list__title {
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 0;
@@ -464,41 +464,34 @@ img {
   line-height: 1.14;
 }
 
-.features-list p {
+.features__list__text {
   margin-top: 10px;
   margin-bottom: 0;
 }
 
-.examples-title {
+.examples__title {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
 }
 
-.examples-list {
+.examples__list {
   margin-top: 50px;
   display: flex;
   margin-bottom: 0;
 }
 
-.examples-list .item {
+.examples__item {
   margin-right: 30px;
-}
-
-.examples-list .item:last-child {
-  margin-right: 0;
-}
-
-.examples-list img {
-  display: block;
-}
-
-.examples-list .item {
   position: relative;
   display: flex;
 }
 
-.examples-list-container {
+.examples__item:last-child {
+  margin-right: 0;
+}
+
+.examples__list-container {
   left: 0;
   bottom: 0;
   position: absolute;
@@ -510,7 +503,7 @@ img {
   align-items: center;
 }
 
-.examples-list-container p {
+.examples__text {
   text-align: center;
   margin: 0;
   font-weight: 700;
@@ -973,7 +966,7 @@ img {
   background-color: var(--secondary-background-color);
 }
 
-.section-no-padding {
+.section-no-top-padding {
   padding-top: 0;
 }
 /*# sourceMappingURL=main.css.map */
